@@ -46,7 +46,8 @@ export default function ContainerFrutas() {
 
     const options = {
         includeScore: false,
-        keys: ['name']
+        keys: ['name'],
+        threshold: 0.2
     }
 
 
