@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.Header {
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    max-height: 70px;
+    width: 100vw;
+  
+    display: grid;
+    grid-template-areas: "logo nav";
+  
+    /* Cosmetics */
+    background-color: #db504a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .Logo {
+    grid-area: logo;
+    height: 70px;
+    font-size: 2rem;
+    color: #084c61;
+    margin-left: 1rem;
+}
+  
+  .Nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+  }
+  .Nav a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .Nav a:hover {
+    transform: scale(1.1);
+  }
+  .Nav button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #DB8137;
+    box-shadow: 0px 5px 0px 0px rgba(5, 5, 5, 0.789);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+  }
+  
+  .Nav button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+  }
+  
+  .Nav input{
+      margin-left: 15px;
+  }
+  
+  
+  .cartDiv{
+    display: flex;
+  }
+  .cartDiv div{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* @media (max-width: 700px) {
+    .Header {
+      grid-template-areas: "logo burger" "nav nav";
+    }
+    .Nav {
+      grid-template-rows: repeat(4, auto);
+      grid-template-columns: none;
+      grid-row-gap: 20px;
+  
+      padding: 30px 0 30px;
+      background: rgba(40, 44, 47, 0.95);
+      box-shadow: 0 4px 8px 0 rgba(130, 37, 37, 0.2);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  } */
+  
+ 

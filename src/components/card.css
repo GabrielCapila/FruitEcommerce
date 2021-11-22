@@ -1,0 +1,32 @@
+i{
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+.fruitImg{
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cardButton{
+    border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.cardButton:active{
+    transform: translateY(20px);
+    box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.25);
+    background-color: rgb(30, 255, 0);
+}
+.cardButton:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}

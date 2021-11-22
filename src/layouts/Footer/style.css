@@ -1,0 +1,9 @@
+.Footer{
+    position: fixed;
+height: 53px;
+width: 100vw;
+display: grid;
+bottom: 0;
+grid-template-areas: "logo nav";
+background-color: #eeeeee;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);}
