@@ -42,7 +42,6 @@ export default function ContainerFrutas() {
             imgPath: mangaImg
         },
     ]
-    const [fruta, setFrutas] = useState(frutas)
     const [filter, setFilter] = useState('')
 
     const options = {

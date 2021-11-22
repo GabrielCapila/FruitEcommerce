@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import { Navigate, Route } from "react-router";
-import {useRedirect} from 'hookrouter';
-import { Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './style.css'
-import IndexPage from "..";
 
 export default function Login() {
 
@@ -13,11 +10,6 @@ export default function Login() {
     function validateForm() {
         return email.length > 0 && password.length > 0;
     }
-
-    function handleSubmit(event) {
-        event.preventDefault();
-    }
-    console.log(email)
 
     let navigate = useNavigate()
 

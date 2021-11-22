@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import { CartContext } from "../../contexts/CartContext";
+import React from "react";
 import './styles.css'
 import lodash from 'lodash'
 
@@ -13,10 +12,7 @@ export default function CartCard() {
         currency: 'BRL',
     });
 
-    console.log()
-
     const fruitObject = lodash.groupBy(cartDataParsed, 'name')
-    console.log(fruitObject)
 
     return (
         <div className="container">
@@ -39,7 +35,6 @@ export default function CartCard() {
                                 </div>
                             </div>
                         </div>
-
                     )
                     )
                 }

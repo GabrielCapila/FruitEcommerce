@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./style.css";
-import { CSSTransition } from "react-transition-group";
 import { faAppleAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CartContext } from "../../contexts/CartContext";
 
 
 export default function Header() {
-    const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [cart, setCart] = useContext(CartContext)
 
@@ -29,9 +27,7 @@ export default function Header() {
         }
     };
 
-    const toggleNav = () => {
-        setNavVisibility(!isNavVisible);
-    };
+    
 
 
     return (

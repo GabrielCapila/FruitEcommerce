@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import styled from "styled-components"
 import './card.css'
 import { CartContext } from '../contexts/CartContext';
@@ -20,17 +20,6 @@ const Price = styled.p`
 color: grey;
   font-size: 20px;
   font-weight: 500;
-`
-const CardButton = styled.button`
-border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 1.5rem;
 `
 let formatter = new Intl.NumberFormat('pt-BR', {
   style: 'currency',
@@ -56,7 +45,7 @@ function Card(props) {
 
   return (
     <CardDiv>
-      <img className="fruitImg" src={props.img} />
+      <img alt="" className="fruitImg" src={props.img} />
       <h2>{props.name}</h2>
       <Price>{formatter.format(props.value)}</Price>
       <button className="cardButton" onClick={addToCart}>

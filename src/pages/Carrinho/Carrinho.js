@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import CartCard from '../../components/CartCards';
-import { CartContext } from '../../contexts/CartContext';
 import Footer from '../../layouts/Footer';
 import Header from '../../layouts/Header';
 import jsPDF from 'jspdf';

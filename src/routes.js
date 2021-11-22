@@ -1,7 +1,7 @@
 import{
     Routes,
     Route,
-    Redirect
+    
 } from 'react-router-dom'
 import { CartProvider } from './contexts/CartContext'
 import IndexPage from './pages'
