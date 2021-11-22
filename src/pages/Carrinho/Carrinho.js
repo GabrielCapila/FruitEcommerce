@@ -30,7 +30,7 @@ function Carrinho() {
     const cartParsed = JSON.parse(cartData)
 
     function printDocument() {
-        const input = document.getElementById('info');
+        const input = document.getElementById('teste');
         html2canvas(input)
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
@@ -63,7 +63,9 @@ function Carrinho() {
                                     {/* <ButtonCheckout name={cartParsed.name} price={cartParsed.price} img={cartParsed.img} /> */}
                                 </div>
                             </div>
+                            <div id="teste">
                             <CartCard name={cartParsed.name} price={cartParsed.price} img={cartParsed.img} />
+                            </div>
                         </div>
                     </div>
                 </div>
