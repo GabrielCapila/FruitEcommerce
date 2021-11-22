@@ -37,7 +37,6 @@ function Card(props) {
     
   }
   localStorage.setItem('cart', JSON.stringify(cart))
-  console.log(cart)
   const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
   
   localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
