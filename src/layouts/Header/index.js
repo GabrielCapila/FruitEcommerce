@@ -3,6 +3,7 @@ import "./style.css";
 import { faAppleAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CartContext } from "../../contexts/CartContext";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -39,7 +40,7 @@ export default function Header() {
             <nav className="Nav">
                     <a href="/home">Home</a>
                 <div className="cartDiv">
-                    <a href="/carrinho">Carrinho </a>
+                    <Link to="/carrinho">Carrinho </Link>
                     <div>({cart.length})</div>
                 </div>
             </nav>

@@ -27,19 +27,26 @@ export default function Login() {
                 <div className="column">
                     <form className="col-lg-12" >
                         <div className="containerLogin">
+                            <div className="divTitle">
+                                <h1>Fruit E-commerce</h1>
+                                </div>
                             <div className="login">
                                 <div>
+                                    <label className="labelLogin">Email</label>
                                     <input 
                                         className="inputDiv"
                                         autoFocus
+                                        placeholder="Digite seu email..."
                                         type="email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)} />
                                 </div>
                                 <div>
+                                <label className="labelLogin">Senha</label>
                                     <input 
                                         className="inputDiv"
                                         autoFocus
+                                        placeholder="Digite sua senha..."
                                         type="password"
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)} />
