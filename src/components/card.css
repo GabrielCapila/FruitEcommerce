@@ -21,7 +21,7 @@ i{
 }
 
 .cardButton:active{
-    transform: translateY(20px);
+    transform: translateY(10px);
     box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.25);
     background-color: rgb(30, 255, 0);
 }

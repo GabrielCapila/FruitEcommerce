@@ -13,8 +13,8 @@
     flex-direction: column;
     height: 100%;
     width: 50%;
-    border-radius: 258px;
-    background-color: rgb(56, 40, 40);
+    border-radius: 60px;
+    background-color: #db504a;
 }
 
 .inputDiv{
